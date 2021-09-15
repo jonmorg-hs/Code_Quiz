@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CODE QUIZ</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+    <div class="card" style="display:block;">
+      <label id="high_scores">View Highscores</label>  
+      <label id="timer"></label>  
+    </div>    
+    <div id="title" class="card">
+        <div class="card-header">
+          <h2>CODING QUIZ CHALLENGE</h2>
+          <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds!</p>
+        </div>
+        <div class="card-body">
+            <input type="button" id="start_quiz_btn" value="Start Quiz" />
+        </div>
+      </div>
+      <div id="question_1" class="card">
+        <div class="card-header">
+          <h2>Commonly used data type DO NOT include:</h2>
+        </div>
+        <div class="card-body">
+        <input type="button" class="q1" data-answer="incorrect" value="1. strings" /><br/>
+        <input type="button" class="q1" data-answer="incorrect" value="2. booleans" /><br/>
+        <input type="button" class="q1" data-answer="correct" value="3. alerts" /><br/>
+        <input type="button" class="q1" data-answer="incorrect" value="4. numbers" /><br/>
+        </div>
+        <div class="card-footer">
+            <h3 id="q1_result"></h3>
+        </div>
+      </div>
+      <div id="question_2" class="card">
+        <div class="card-header">
+          <h2>The condition in an if / else statement is enclosed within _____.</h2>
+        </div>
+        <div class="card-body">
+        <input type="button" class="q2" data-answer="incorrect" value="1. quotes" /><br/>
+        <input type="button" class="q2" data-answer="correct" value="2. curly brackets" /><br/>
+        <input type="button" class="q2" data-answer="incorrect" value="3. parenthesis" /><br/>
+        <input type="button" class="q2" data-answer="incorrect" value="4. square brackets" /><br/>
+        </div>
+        <div class="card-footer">
+            <h3 id="q2_result"></h3>
+        </div>
+      </div>
+      <div id="question_3" class="card">
+        <div class="card-header">
+          <h2>Arrays in JavaScript can be used to store _____.</h2>
+        </div>
+        <div class="card-body">
+        <input type="button" class="q3" data-answer="incorrect" value="1. numbers and strings" /><br/>
+        <input type="button" class="q3" data-answer="incorrect" value="2. other arrays" /><br/>
+        <input type="button" class="q3" data-answer="incorrect" value="3. booleans" /><br/>
+        <input type="button" class="q3" data-answer="correct" value="4. all of the above" /><br/>
+        </div>
+        <div class="card-footer">
+            <h3 id="q3_result"></h3>
+        </div>
+      </div>
+      <div id="question_4" class="card">
+        <div class="card-header">
+          <h2>String values must be enclosed within _____ when being assigned to variables.</h2>
+        </div>
+        <div class="card-body">
+        <input type="button" class="q4" data-answer="incorrect" value="1. commas" /><br/>
+        <input type="button" class="q4" data-answer="incorrect" value="2. curly brackets" /><br/>
+        <input type="button" class="q4" data-answer="correct" value="3. quotes" /><br/>
+        <input type="button" class="q4" data-answer="incorrect" value="4. parenthesis" /><br/>
+        </div>
+        <div class="card-footer">
+            <h3 id="q4_result"></h3>
+        </div>
+      </div>
+      <div id="question_5" class="card">
+        <div class="card-header">
+          <h2>A very useful tool used during development and debugging for printing content to the debugger is:</h2>
+        </div>
+        <div class="card-body">
+        <input type="button" class="q5" data-answer="incorrect" value="1. Javascript" /><br/>
+        <input type="button" class="q5" data-answer="incorrect" value="2. terminal / bash" /><br/>
+        <input type="button" class="q5" data-answer="incorrect" value="3. for loops" /><br/>
+        <input type="button" class="q5" data-answer="correct" value="4. console.log" /><br/>
+        </div>
+        <div class="card-footer">
+            <h3 id="q5_result"></h3>
+        </div>
+      </div>
+      <div id="result" class="card">
+        <div class="card-header">
+          <h2>All done!</h2>
+        </div>
+        <div class="card-body">
+        <label id="final_score"></label><br/>
+        <label>Enter initials</label>
+        <input id="initials" type="text" value=""/>
+        <input id="submit_btn" type="button" value="Submit">
+        </div>
+      </div>
+      <div id="highscores" class="card">
+        <div class="card-header">
+          <h1>Highscores</h1>
+        </div>
+        <div class="card-body">
+        <br/>
+        <div id="highscores_list"></div>
+        <br/>
+        <input id="goback_btn" type="button" value="Go Back">
+        <input id="clear_btn" type="button" value="Clear Highscores">
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
